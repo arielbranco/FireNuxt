@@ -1,0 +1,19 @@
+{
+  "hosting": {
+    "public": ".fireNuxt/hosting",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "nuxtApp"
+      }
+    ]
+  },
+  "functions": {
+    "source": ".fireNuxt"
+  }
+}

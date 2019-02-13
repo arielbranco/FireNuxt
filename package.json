@@ -1,0 +1,35 @@
+{
+  "name": "new",
+  "version": "1.0.0",
+  "description": "FireNuxt - SSR on Firebase",
+  "author": "Ariel Branco",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build ",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "deploy": "firebase deploy",
+    "clean": "rimraf .fireNuxt/functions/* && rimraf .fireNuxt/hosting/*",
+    "filecopy": "cp -R .nuxt/ .fireNuxt/functions && mkdir .fireNuxt/hosting/static &&  cp -R .nuxt/dist/client/ .fireNuxt/hosting/static &&  cp -R static/ .fireNuxt/hosting",
+    "fireinstall": " npm install && cd \".fireNuxt\" && npm install && cd .. && npm run console",
+    "fireuse": "firebase use --add",
+    "firebuild": " npm run clean && nuxt build && npm run filecopy",
+    "fire": "npm run firebuild && npm run deploy",
+    "console": "echo Go to  https://console.firebase.google.com and setup our projet when run: npm run fireuse"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/pwa": "^2.6.0",
+    "cross-env": "^5.2.0",
+    "firebase": "^5.8.2",
+    "nuxt": "^2.4.0",
+    "vuex": "^3.1.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.9",
+    "rimraf": "^2.6.3",
+    "sass-loader": "^7.1.0"
+  }
+}
