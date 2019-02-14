@@ -4,7 +4,7 @@
 <br/><br/><br/>
 
   
-<p align="center"> Host a Vue.js powered by Nuxt.js with Firebase Cloud Functions, Hosting and a SSR.</p>
+<p align="center"> Vue.js powered by Nuxt.js with Firebase Hosting, Cloud Functions ( Server Side Render) </p>
 <br/>
 
 <p align="center">  👉 <a href="https://app.arielbranco.com">Live Preview</a></p>
