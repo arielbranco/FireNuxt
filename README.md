@@ -64,4 +64,4 @@ npm run firebuild
 npm run deploy
 ```
 <br>
-OBS: you must unlock (add a credit card) Cloud Functions at: [https://console.cloud.google.com](https://console.cloud.google.com)
+OBS: you must unlock (add a credit card) Cloud Functions at: https://console.cloud.google.com
